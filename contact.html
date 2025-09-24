@@ -71,18 +71,8 @@
           <button class="btn btn-outline-warning" type="submit">Send Message</button>
         </form>
 
-        <script>
-          // simple client-side validation
-          (function(){
-            const form = document.currentScript.previousElementSibling;
-            form.addEventListener('submit', (e)=>{
-              if(!form.checkValidity()){
-                e.preventDefault();e.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            });
-          })();
-        </script>
+      
+     
       </div>
       <div class="col-lg-6">
         <div class="p-3 rounded-4 mb-4" style="background:var(--bg-soft);border:1px solid rgba(212,175,55,.12);">
