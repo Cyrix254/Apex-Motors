@@ -1,0 +1,88 @@
+:root{
+    --bg:#0b0f14;            /* deep charcoal */
+    --bg-soft:#121821;       /* slightly lighter */
+    --text:#ffffff;          /* near-white text */
+    --muted:#a8b0b9;
+    --gold:#d4af37;          /* gold accent */
+    --card:#0f141b;
+  }
+
+
+  #heroCarousel img {
+    max-height: 500px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image scales properly */
+  }
+
+  .navbar-nav .nav-link {
+    color: white !important; /* Ensures the text is white */
+  }
+  
+  .navbar-nav .nav-link i {
+    margin-right: 5px; /* Adds spacing between the icon and text */
+  }
+
+  /* Center the APEX MOTORS title */
+.apex-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: Add a shadow for better readability */
+  }
+  
+  /* Ensure the rest of the hero-caption stays in its original position */
+  .hero-caption {
+    position: relative;
+    z-index: 5;
+  }
+  
+  html,body{background:var(--bg);color:var(--text);}
+  
+  /* Navbar */
+  .navbar{background:rgba(7,10,14,.9)!important;backdrop-filter: blur(6px);}
+  .navbar-brand img{height:58px;width:auto;margin-right:.5rem;}
+  .navbar-brand span{font-weight:800;letter-spacing:.5px;color:var(--text); font-size: 40px;}
+  .nav-link{color:var(--muted)!important;}
+  .nav-link:hover,.nav-link.active{color:var(--gold)!important;}
+  
+  /* Hero */
+  .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.75));}
+  .hero-caption{position:absolute;bottom:10%;left:6%;z-index:2;color:#fff;}
+  .hero-title{font-size:clamp(2rem,4vw,3.5rem);font-weight:800;}
+  .hero-sub{font-size:clamp(1rem,2vw,1.25rem);opacity:.9;}
+  
+  /* Cards */
+  .card{background:var(--card);border:1px solid rgba(212,175,55,.12);}
+  .card:hover{transform:translateY(-4px);transition:all .25s ease;box-shadow:0 12px 30px rgba(0,0,0,.35);}
+  .card-title{color:#fff;font-weight:700;}
+  .card-price{color:var(--gold);font-weight:700;}
+  
+  /* Category tiles */
+  .cat-tile{position:relative;overflow:hidden;border-radius:1rem;background:#000;}
+  .cat-tile img{width:100%;height:220px;object-fit:cover;opacity:.75;transition:transform .5s ease, opacity .35s ease;}
+  .cat-tile:hover img{transform:scale(1.05);opacity:.9;}
+  .cat-label{position:absolute;inset:auto 0 0 0;padding:1rem 1.25rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,.75));color:#fff;font-weight:700;}
+  
+  /* Section titles */
+  .section-title{font-weight:800;letter-spacing:.5px;}
+  .section-underline{width:72px;height:3px;background:var(--gold);border-radius:3px;margin:.5rem auto 0;}
+  
+  /* Footer */
+  .footer{background:var(--bg-soft);border-top:1px solid rgba(212,175,55,.12);}
+  .footer a{color:var(--muted);}
+  .footer a:hover{color:var(--gold);}
+  
+  /* Back to Top */
+  #backToTop{position:fixed;right:16px;bottom:16px;z-index:9999;display:none;border:1px solid rgba(212,175,55,.35);}
+  
+  /* Tables in modal */
+  .spec-table td,.spec-table th{border-color:rgba(255,255,255,.1)!important;color:#dfe6ee;}
+  
+  /* Inputs */
+  .form-control,.form-select{background:#0f141b;border-color:rgba(255,255,255,.1);color:#e9edf2;}
+  .form-control:focus{border-color:var(--gold);box-shadow:0 0 0 .2rem rgba(212,175,55,.15);}
+  
+  /* Map wrapper */
+  .map-wrap{border:1px solid rgba(212,175,55,.12);border-radius:1rem;overflow:hidden;}

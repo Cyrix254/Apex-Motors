@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apex Motors – Cars</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/Apex Motors.jpg" alt="Apex Motors logo" />
+        <span>Apex Motors</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="index.html">
+              <i class="fas fa-home"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cars.html">
+              <i class="fas fa-car"></i> Cars
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">
+              <i class="fas fa-info-circle"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container py-5">
+    <div class="d-flex flex-column flex-lg-row gap-3 align-items-stretch align-items-lg-end justify-content-between mb-4">
+      <div>
+        <h1 class="section-title mb-0">Our Collection</h1>
+        <div class="section-underline ms-0"></div>
+      </div>
+      <div class="d-flex gap-2 w-100 w-lg-auto">
+        <input id="carSearch" class="form-control" type="search" placeholder="Search by name…" />
+        <select id="categoryFilter" class="form-select" aria-label="Filter by category">
+          <option value="all">All Categories</option>
+          <option value="suv">SUV</option>
+          <option value="sports">Sports</option>
+          <option value="classic">Classic</option>
+          <option value="luxury">Luxury</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="carsGallery" class="row g-4">
+      <!-- Repeatable card pattern -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 car-card" data-name="Apex GT-R" data-category="sports" data-specs='{"engine":"3.8L Twin-Turbo V6","power":"565 hp","transmission":"6-Speed DCT","year":"2022","mileage":"12,000 km"}'>
+          <img src="images/APEX GT-R.jpg" class="card-img-top" alt="Apex GT-R" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Apex GT-R</h5>
+            <p class="card-text text-white">Track-bred performance with everyday drivability.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <span class="card-price">KES 9,500,000</span>
+              <button class="btn btn-outline-warning" data-role="view-details">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 car-card" data-name="TrailMaster X" data-category="suv" data-specs='{"engine":"3.0L V6","drivetrain":"AWD","transmission":"8-Speed Auto","year":"2021","mileage":"24,000 km"}'>
+          <img src="images/TrailMaster X.jpg" class="card-img-top" alt="TrailMaster X" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">TrailMaster X</h5>
+            <p class="card-text text-white">Luxury SUV crafted for comfort and capability.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <span class="card-price">KES 6,450,000</span>
+              <button class="btn btn-outline-warning" data-role="view-details">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 car-card" data-name="Luxor S" data-category="luxury" data-specs='{"engine":"4.0L V8","power":"503 hp","transmission":"9-Speed Auto","year":"2023","mileage":"5,500 km"}'>
+          <img src="images/Luxor S.jpg" class="card-img-top" alt="Luxor S" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Luxor S</h5>
+            <p class="card-text text-white">Opulence and silence in motion.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <span class="card-price">KES 12,900,000</span>
+              <button class="btn btn-outline-warning" data-role="view-details">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 car-card" data-name="Heritage 68" data-category="classic" data-specs='{"engine":"5.7L V8","transmission":"4-Speed Manual","year":"1968","mileage":"72,000 km"}'>
+          <img src="images/Heritage 68.jpg" class="card-img-top" alt="Heritage 68" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Heritage 68</h5>
+            <p class="card-text text-white">A timeless classic with restored authenticity.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <span class="card-price">KES 4,250,000</span>
+              <button class="btn btn-outline-warning" data-role="view-details">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 more sample cards -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 car-card" data-name="Apex Arrow" data-category="sports" data-specs='{"engine":"5.2L V10","power":"610 hp","year":"2020"}'>
+          <img src="images/Apex Arrow.jpg" class="card-img-top" alt="Apex Arrow" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Apex Arrow</h5>
+            <p class="card-text text-white">Precision aerodynamics and raw power.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <span class="card-price">KES 18,700,000</span>
+              <button class="btn btn-outline-warning" data-role="view-details">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 car-card" data-name="Urban Cruiser" data-category="suv" data-specs='{"engine":"2.5L Hybrid","drivetrain":"AWD","year":"2022"}'>
+          <img src="images/Urban Cruiser.jpg" class="card-img-top" alt="Urban Cruiser" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Urban Cruiser</h5>
+            <p class="card-text text-white">Efficient city SUV with hybrid smarts.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <span class="card-price">KES 3,950,000</span>
+              <button class="btn btn-outline-warning" data-role="view-details">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 car-card" data-name="Majesty L" data-category="luxury" data-specs='{"engine":"3.0L Twin-Turbo","features":"Massage seats, HUD","year":"2023"}'>
+          <img src="images/Majesty L.jpg" class="card-img-top" alt="Majesty L" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Majesty L</h5>
+            <p class="card-text text-white">Executive limousine with gold-trim details.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <span class="card-price">KES 14,200,000</span>
+              <button class="btn btn-outline-warning" data-role="view-details">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 car-card" data-name="Retro Coupe" data-category="classic" data-specs='{"engine":"2.0L I4","restoration":"Frame-off","year":"1973"}'>
+          <img src="images/Retro Coupe.jpg" class="card-img-top" alt="Retro Coupe" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Retro Coupe</h5>
+            <p class="card-text text-white">Charming lines with modern reliability upgrades.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <span class="card-price">KES 3,100,000</span>
+              <button class="btn btn-outline-warning" data-role="view-details">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="carDetailsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="background:#0f141b;">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Car Details</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-img img-fluid rounded mb-3" src="assets/img/car1.jpg" alt="Selected car" />
+          <p class="modal-desc text-secondary"></p>
+          <div class="table-responsive">
+            <table class="table table-dark table-striped align-middle spec-table">
+              <tbody class="modal-specs"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <a href="contact.html" class="btn btn-outline-warning">Request Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="container py-4 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+      <div>© <span id="year"></span> Apex Motors. All rights reserved.</div>
+      <div class="d-flex gap-3 fs-4">
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="btn btn-outline-warning rounded-pill"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

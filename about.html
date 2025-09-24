@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About – Apex Motors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/Apex Motors.jpg" alt="Apex Motors logo" />
+        <span>Apex Motors</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="index.html">
+              <i class="fas fa-home"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cars.html">
+              <i class="fas fa-car"></i> Cars
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">
+              <i class="fas fa-info-circle"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container py-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <h1 class="section-title text-primary">Our Story</h1>
+        <div class="section-underline ms-0 mb-3"></div>
+        <p class="lead text-white">Apex Motors curates a handpicked portfolio of performance, luxury, and classic vehicles for discerning drivers. We blend expertise with transparency so every interaction feels premium and honest.</p>
+        <div class="row g-3 mt-3">
+          <div class="col-6">
+            <div class="p-3 rounded-4" style="background:var(--bg-soft);border:1px solid rgba(212,175,55,.12);">
+              <div class="fw-bold text-primary">Mission</div>
+              <div class="text-white">At Apex Motors, our mission is to redefine mobility by delivering vehicles that combine cutting-edge technology, reliable performance, and timeless design. We are committed to creating driving experiences that inspire confidence, passion, and freedom on every journey.</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 rounded-4" style="background:var(--bg-soft);border:1px solid rgba(212,175,55,.12);">
+              <div class="fw-bold text-primary">Values</div>
+              <div class="text-white">We are driven by innovation, committed to excellence, and guided by integrity. We value sustainability for a better future, and above all, we put our customers at the heart of every design, ensuring every ride is safe, memorable, and meaningful.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2">
+        <img src="images/Show room.jpeg" class="img-fluid rounded-4" alt="Apex Motors showroom" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="container py-4 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+      <div>© <span id="year"></span> Apex Motors. All rights reserved.</div>
+      <div class="d-flex gap-3 fs-4">
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="btn btn-outline-warning rounded-pill"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
